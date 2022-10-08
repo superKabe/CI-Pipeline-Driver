@@ -26,11 +26,15 @@ dependencies {
 
     // Base CI Pipeline Project
     implementation 'com.github.superKabe:CI-Pipeline:0.1'
+
+    // https://mvnrepository.com/artifact/org.terasoluna.gfw/terasoluna-gfw-jodatime
+    implementation group: 'org.terasoluna.gfw', name: 'terasoluna-gfw-jodatime', version: '5.7.1.SP1.RELEASE'
+
 }
 
 application {
     // Define the main class for the application.
-    mainClass = 'driver.ci.pipeline.App'
+    mainClass = 'driver.ci.pipeline.UniData'
 }
 
 tasks.named('test') {
